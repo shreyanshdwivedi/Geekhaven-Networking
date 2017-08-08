@@ -1,0 +1,650 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Networking Wing</title>
+    <link href='https://fonts.googleapis.com/css?family=Margarine' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+     <script type="text/javascript">// <![CDATA[
+    function preloader(){
+        setTimeout(function() {
+          document.getElementById("loading").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        }, 1000);
+    }//preloader
+    window.onload = preloader();
+ // ]]></script>
+
+  <script type="text/javascript">
+         $('.navbar-default .navbar-nav li a').click(function(e) {
+            var $this = $(this);
+            if (!$this.hasClass('active')) {
+              $this.addClass('active');
+            }
+            e.preventDefault();
+          });
+      </script>
+
+  </head>
+  <body data-spy="scroll" data-target=".navbar" style="font-family: 'Margarine';">
+
+    <div id="loading" style="background: url('images/loader.gif') no-repeat; background-size:cover;"></div>
+    <div id="content">
+
+    <!--Navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top opaque-navbar">
+      <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://geekhaven.iiita.ac.in/" style="cursor: pointer; color: #e44c65; font-size: 30px;" target="_blank">
+          GEEKHAVEN
+        </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about_net" class="cool-link">About</a></li>
+          <li><a href="#workshops" class="cool-link">Workshops</a></li>
+          <li><a href="#resources" class="cool-link">Resources</a></li>          
+          <li><a href="#team" id="teams" class="cool-link" onmouseover="document.getElementById('teams').style.color:'#272833'">Team</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+ 
+    <br><br>
+    <div class="banner" style="background: url('images/net2.jpg') no-repeat; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <div class="heading" style="background:rgba(255,255,255, 0.5);">
+                        <h2 style="color: #272833;overflow: hidden; font-size: 40px;">NETWORKING WING</h2>
+                    </div>
+                    <div class="text-center" style="background:rgba(255,255,255, 0.5); ">
+                      <p style="letter-spacing: 2px; font-size: 19px;">" Networking is a compulsive and addictive way to live "</p>
+                      <br>
+                      <p style=" font-size: 15px; letter-spacing: 1px;">WE FAIL AT FAILING</p>
+                    </div>
+                    <div>
+                      <a href="#about_net" class="link"><b><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about_net">
+        <div class="text-center" style="font-size: 30px; margin-top: 60px;">
+            <p>ABOUT</p>
+            <hr width="100px" style="margin-top:30px;text-align:center; margin-top:-8px; border-color:#e44c65;">
+        </div>
+        <div class="container text-center" style="font-size: 20px;">
+            It is a student body made specifically for maintenance of IIITA Network.<br/>
+            We are the guardians of Networking services you receive.
+            Networking Wing Of Geekhaven works with the motive of developing various techniques and algorithms to protect the network infrastructure against various attacks.
+        </div>
+    </div>
+
+    <div id="workshops" style="background-color: #f2f2f2;">
+        <div class="text-center" style="font-size: 30px; margin-top: 60px;">
+            <p>WORKSHOPS</p>
+            <hr width="150px" style="margin-top:30px;text-align:center; margin-top:-8px; border-color:#e44c65;">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                      <div class="work-shop">
+                          <div class="workshop-icons">
+                              <i class="fa fa-code" aria-hidden="true" style="color: white; font-size: 70px; margin-top:25px;"></i>
+                          </div>
+                          <br><br>
+                          <div class="net-info">
+                              <div style="text-align: center; font-size: 30px"><b>Basics Of Networking</b></div>
+                              <ul>
+                                  <li>IP Address</li>
+                                  <li>MAC Address</li>
+                                  <li>Introduction to LAN and WAN</li>
+                                  <li>Basic terminal commands</li>
+                              </ul>
+                          </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                      <div class="work-shop third">
+                          <div class="workshop-icons">
+                              <i class="fa fa-wifi" aria-hidden="true" style="color: white; font-size: 70px; margin-top:25px;"></i>
+                          </div>
+                          <br><br>
+                          <div class="net-info">
+                              <div style="text-align: center; font-size: 30px"><b>Wireless Security</b></div>
+                              <ul style="margin-left: 30px;">
+                                  <li>Wireless Networking</li>
+                                  <li>
+                                      Useful Tools:
+                                      <ul>
+                                          <li>Wireshark</li>
+                                          <li>Nmap</li>
+                                          <li>Aircrack-Ng Suite</li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                      <div class="work-shop third">
+                          <div class="workshop-icons">
+                              <i class="fa fa-cogs" aria-hidden="true" style="color: white; font-size: 70px; margin-top:25px;"></i>
+                          </div>
+                          <br><br>
+                          <div class="net-info">
+                              <div style="text-align: center; font-size: 30px"><b>Routers & Switches</b></div>
+                              <ul style="margin-left: 15px;">
+                                  <li>Introduction</li>
+                                  <li>
+                                      Configuration
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="resources">
+        <div class="text-center" style="font-size: 30px; margin-top: 60px;">
+            <p>RESOURCES</p>
+            <hr width="150px" style="margin-top:30px;text-align:center; margin-top:-8px; border-color:#e44c65;">
+        </div>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-4 col-sm-6">
+                      <div class="resource">
+                          <div class="workshop-icons">
+                              <i class="fa fa-book" aria-hidden="true" style="color: white; font-size: 70px; margin-top:25px;"></i>
+                          </div>
+                          <br><br>
+                          <div class="net-info">
+                              <div style="text-align: center; font-size: 30px"><b>BOOKS</b></div>
+                              <ul>
+                                  <li>
+                                      <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                                      <span style="color: #272833;">
+                                          Computer Networking <br>
+                                          <div style="font-size: 15px; margin-left: 20px;"> A Top Down Approach</div>
+                                      </span>
+                                  </li><br>
+                                  <li>
+                                      <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                                      <span style="color: #272833;">
+                                          Computer Networks<br>
+                                          <div style="font-size: 15px; margin-left: 20px;">By: Andrew S. and David J.</div>
+                                      </span>
+                                  </li><br>
+                                  <li>
+                                      <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                                      <span style="color: #272833;">
+                                          TCP/IP Protocol Suite<br>
+                                          <div style="font-size: 15px; margin-left: 20px;">By: A. Forouzon</div>
+                                      </span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6">
+                      <div class="resource third">
+                          <div class="workshop-icons">
+                              <i class="fa fa-laptop" aria-hidden="true" style="color: white; font-size: 70px; margin-top:25px;"></i>
+                          </div>
+                          <br><br>
+                          <div class="net-info">
+                              <div style="text-align: center; font-size: 30px"><b>WEBSITES</b></div>
+                              <ul>
+                                  <li>
+                                      <i class="fa fa-link" aria-hidden="true"></i>
+                                      <a href="https://www.cybrary.it/" style="color: #272833;">
+                                          Cybrary <br>
+                                          <div style="font-size: 15px; margin-left: 20px;">Free Cyber Security Learning</div>
+                                      </a>
+                                  </li><br>
+                                  <li>
+                                      <i class="fa fa-link" aria-hidden="true"></i>
+                                      <a href="https://www.netacad.com/" style="color: #272833;">
+                                          CISCO<br>
+                                          <div style="font-size: 15px; margin-left: 20px;">Net Academy</div>
+                                  </li><br>
+                                  <li>
+                                      <i class="fa fa-link" aria-hidden="true"></i>
+                                      <a href="http://nptel.ac.in/courses/106105081/1" style="color: #272833;">
+                                          NPTEL<br>
+                                          <div style="font-size: 15px; margin-left: 20px;">Computer Science And Engineering</div>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="resource third">
+                          <div class="workshop-icons">
+                              <i class="fa fa-youtube" aria-hidden="true" style="color: white; font-size: 70px; margin-top:25px;"></i>
+                          </div>
+                          <br><br>
+                          <div class="net-info">
+                              <div style="text-align: center; font-size: 30px"><b>VIDEO TUTORIALS</b></div>
+                              <ul>
+                                  <li>
+                                      <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                      <a href="https://www.youtube.com/playlist?list=PLh94XVT4dq02frQRRZBHzvj2hwuhzSByN" style="color: #272833;">
+                                          CCNA SERIES <br>
+                                          <div style="font-size: 15px; margin-left: 20px;">Free Cisco Training</div>
+                                      </a>
+                                  </li><br>
+                              </ul>
+                          </div>
+                      </div>
+                </div>
+
+          </div>
+       </div>
+    </div>
+
+
+
+    <div id="team" style="background-color: #f2f2f2;">
+    <div style="margin-top: 60px;">
+        <div style="font-size: 30px; color: #272833;">
+          OUR TEAM
+          <hr width="140px" style="text-align:center; margin-top:-1px; border-color:#e44c65;">
+        </div>
+
+
+        <div class="container" style="margin-top: 50px;">
+            <div style="font-size: 20px; color: #272833;">
+              Coordinators
+              <hr width="120px" style="text-align:center; margin-top:-1px; border-color:#e44c65;">
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-6"></div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div id="coordi">
+                    <img src="images/ashutosh.jpg" alt="Avatar" class="image">
+                    <div class="middle">
+
+                        <div class="coordi-about">
+                          <br>
+                          <b>SKILLS</b><br>
+                          PHP, JQUERY, JAVASCRIPT, CSS, HTML, WORDPRESS<br><br>
+                          <div style="overflow: hidden;text-align: left; margin-left: 25px;margin-top: -15px;">
+                              <i class="fa fa-phone" aria-hidden="true" style="font-size: 20px;"> 9919241909</i><br>
+                              <i class="fa fa-envelope" aria-hidden="true"> irm2015001@iiita.ac.in</i>
+                          </div>
+                        </div>
+                        <div class="coordi-social" style="margin-top: 10px;">
+                          <a href="https://www.facebook.com/ashutosh.chandra.12"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                          <a href="https://github.com/whiz-kid"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                  </div>
+                    <div class="coordi-info" style="color: black; text-align: left; margin-left: 40px; margin-top: 15px; font-size: 25px;">
+                        ASHUTOSH CHANDRA
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div id="coordi">
+                    <img src="images/Praveen.jpg" alt="Avatar" class="image">
+                    <div class="middle">
+
+                        <div class="coordi-about">
+                          <br>
+                          I am a keen coder and a hacking enthusiast. I love to solve problems through my hacks.
+                          <div style="overflow: hidden;text-align: left; margin-left: 25px;margin-top: 10px;">
+                              <i class="fa fa-phone" aria-hidden="true" style="font-size: 20px;"> 7080397532</i><br>
+                              <i class="fa fa-envelope" aria-hidden="true"> iit2015027@iiita.ac.in</i>
+                          </div>
+                        </div>
+                        <div class="coordi-social" style="margin-top: 10px;">
+                          <a href="https://www.facebook.com/praveen.pourush.3"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                          <a href="https://github.com/praveenpourush"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="coordi-info" style="color: black; text-align: left; margin-left: 50px; margin-top: 15px; font-size: 25px;">
+                        PRAVEEN POURUSH
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-6"></div>
+
+            </div>
+        </div>
+
+
+        
+        <div class="container" style="margin-top: 75px;">
+          <div style="font-size: 20px; color: #272833;">
+            Members
+            <hr width="85px" style="text-align:center; margin-top:-1px; border-color:#e44c65;">
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-sm-6"></div>
+
+            <div class="col-md-4 col-sm-6" style="background-color: #f2f2f2;">
+                <div style="background-color: #f2f2f2; color: black; width: 85%;overflow: hidden; margin-left: 7%;">
+                    <div class="flip-card four">
+                      <div class="front">
+                        <img id="flip-card-bg" src="images/shreyansh.jpg">
+                      
+                        <div class="info_mem">
+                          <span id="name">SHREYANSH DWIVEDI</span><br>
+                          <span id="roll_no">IEC2016031</span>
+                        </div>
+                        <div class="rotate right four">
+                          <i class="fa fa-undo" aria-hidden="true"></i>
+                          More Info
+                        </div>
+                      </div>
+                      <div class="back">
+                        <div class="about_me">About Me</div><br>
+                        <hr width="85%" style="margin-top: -2px;">
+                        <div class="about">
+                          <b>SKILLS</b><br><br>
+                          PHP, JQUERY, JAVASCRIPT, CSS, HTML, WORDPRESS, DJANGO<br><br>
+                          <div style="overflow: hidden; text-align: left; font-size: 18px;">
+                              <i class="fa fa-phone" aria-hidden="true"> 7080397532</i><br>
+                              <i class="fa fa-envelope" aria-hidden="true"> iec2016031@iiita.ac.in</i>
+                          </div>
+                        </div>
+                        <hr width="85%">
+                        <div class="social">
+                          <a href="https://www.facebook.com/shreyansh.dwivedi.18">
+                              <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+
+                          <a href="https://www.instagram.com/dwivedi_shreyansh1997/">
+                              <i class="fa fa-instagram" aria-hidden="true"></i>
+                          </a>
+
+                          <a href="https://www.twitter.com/shreyanshdwiv97">
+                              <i class="fa fa-twitter" aria-hidden="true"></i> 
+                          </a>
+
+                          <a href="https://www.linkedin.com/in/shreyansh-dwivedi-8b51aa140/">
+                              <i class="fa fa-linkedin" aria-hidden="true"></i>
+                          </a>
+
+                          <a href="https://github.com/shreyanshdwivedi">
+                              <i class="fa fa-github" aria-hidden="true"></i>
+                          </a>
+                        </div>
+
+                        <div class="rotate left four">
+                          <i class="fa fa-repeat" aria-hidden="true"></i>
+                          Click To Rotate
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 col-sm-6">
+                <div style="background-color: #f2f2f2; color: black; width: 85%; margin-left: 7%; overflow: hidden;">
+                    <div class="flip-card five">
+                      <div class="front">
+                        <img id="flip-card-bg" src="images/parth1.jpg">
+                      <!--  <div style="height: 0.20em; background-color:#e44c65; margin-top: -0.8vh;"></div>
+                        <img id="flip-card-pic" src="images/shreyansh.jpg">-->
+                        <div class="info_mem">
+                          <span id="name">PARTH AGARWAL</span><br>
+                          <span id="roll_no">IIT2016026</span>
+                        </div>
+                        <div class="rotate right five">
+                          <i class="fa fa-undo" aria-hidden="true"></i>
+                          More Info
+                        </div>
+                      </div>
+                      <div class="back">
+                        <div class="about_me">About Me</div><br>
+                        <hr width="85%" style="margin-top: -2px;">
+                        <div class="about">
+                          <b>SKILLS</b><br><br>
+                          Python, Processing, HTML<br>
+                          Android Studio, Kali<BR><BR>
+                          <div style="overflow: hidden; text-align: left; font-size: 18px;">
+                              <i class="fa fa-phone" aria-hidden="true"> 9557646688</i><br>
+                              <i class="fa fa-envelope" aria-hidden="true"> iit2016026@iiita.ac.in</i>
+                          </div>
+                        </div>
+                        <hr width="85%">
+                        <div class="social">
+                          <a href="https://www.facebook.com/parth.agarwal.90410834">
+                              <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <!--<i class="fa fa-linkedin" aria-hidden="true"></i>
+                          <i class="fa fa-twitter" aria-hidden="true"></i>  
+                          <i class="fa fa-linkedin" aria-hidden="true"></i>
+                          <i class="fa fa-github" aria-hidden="true"></i>-->
+                        </div>
+
+                        <div class="rotate left five">
+                          <i class="fa fa-repeat" aria-hidden="true"></i>
+                          Click To Rotate
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-6">
+                </div>
+
+            </div>
+            </div>
+
+        <div class="container cont-two">
+          <div class="row">
+          <div class="col-md-4 col-sm-6" style="background-color: #f2f2f2;">
+              <div style="background-color: #f2f2f2; color: black; width: 85%; margin-left: 7%; overflow: hidden;">
+                  <div class="flip-card one">
+                    <div class="front">
+                      <img id="flip-card-bg" src="images/bhargav.jpg">
+                      <!--  <div style="height: 0.20em; background-color:#e44c65; margin-top: -0.8vh;"></div>
+                        <img id="flip-card-pic" src="images/shreyansh.jpg">-->
+                      <div class="info_mem">
+                        <span id="name">BHARGAV SATYA</span><br>
+                        <span id="roll_no">IIT2016109</span>
+                      </div>
+                      <div class="rotate right one">
+                        <i class="fa fa-undo" aria-hidden="true"></i>
+                        More Info
+                      </div>
+                    </div>
+                    <div class="back">
+                      <div class="about_me">About Me</div><br>
+                      <hr width="85%" style="margin-top: -2px;">
+                      <div class="about">
+                        Have basic knowledge of web dev.<br>
+                        And keen interest in exploring new technical stuffs<br><br>
+                        <div style="overflow: hidden; text-align: left; font-size: 18px;">
+                            <i class="fa fa-phone" aria-hidden="true"> 7981235475</i><br>
+                            <i class="fa fa-envelope" aria-hidden="true"> iit2016109@iiita.ac.in</i>
+                        </div>
+                      </div>
+                      <hr width="85%">
+                      <div class="social">
+                        <a href="https://www.facebook.com/itzurBhargav">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <!--
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>  
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        -->
+                      </div>
+
+                      <div class="rotate left one">
+                        <i class="fa fa-repeat" aria-hidden="true"></i>
+                        Click To Rotate
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6" style="background-color: #f2f2f2;">
+              <div style="background-color: #f2f2f2; color: black; width: 85%; margin-left: 7%; overflow: hidden;">
+                  <div class="flip-card two">
+                    <div class="front">
+                      <img id="flip-card-bg" src="images/kartik.jpg">
+                      <!--  <div style="height: 0.20em; background-color:#e44c65; margin-top: -0.8vh;"></div>
+                        <img id="flip-card-pic" src="images/shreyansh.jpg">-->
+                      <div class="info_mem">
+                        <span id="name">KARTIK MADAAN</span><br>
+                        <span id="roll_no">LIT2016029</span>
+                      </div>
+                      <div class="rotate right two">
+                        <i class="fa fa-undo" aria-hidden="true"></i>
+                        More Info
+                      </div>
+                    </div>
+                    <div class="back">
+                      <div class="about_me">About Me</div><br>
+                      <hr width="85%" style="margin-top: -2px;">
+                      <div class="about">
+                        <b>SKILLS</b><br><br>
+                        PYTHON, JAVA, HTML, UNITY<br><br>
+                        <div style="overflow: hidden; text-align: left; font-size: 18px;">
+                            <i class="fa fa-phone" aria-hidden="true"> 9711320057</i><br>
+                            <i class="fa fa-envelope" aria-hidden="true"> lit2016029@iiita.ac.in</i>
+                        </div>
+                      </div>
+                      <hr width="85%">
+                      <div class="social">
+                        <a href="https://www.facebook.com/kartik.madaan.90">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/kartikmadaan">
+                          <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kartik-madaan-866338139/">
+                          <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <!--
+                        <i class="fa fa-twitter" aria-hidden="true"></i>  
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        -->
+                      </div>
+
+                      <div class="rotate left two">
+                        <i class="fa fa-repeat" aria-hidden="true"></i>
+                        Click To Rotate
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="col-md-4 col-sm-6" style="background-color: #f2f2f2;">
+              <div style="background-color: #f2f2f2;; color: black; width: 85%; margin-left: 7%; overflow: hidden;">
+                  <div class="flip-card three">
+                    <div class="front">
+                      <img id="flip-card-bg" src="images/akash.jpg">
+                      <!--  <div style="height: 0.20em; background-color:#e44c65; margin-top: -0.8vh;"></div>
+                        <img id="flip-card-pic" src="images/shreyansh.jpg">-->
+                      <div class="info_mem">
+                        <span id="name">AKASH MISHRA</span><br>
+                        <span id="roll_no">IIT2016033</span>
+                      </div>
+                      <div class="rotate right three">
+                        <i class="fa fa-undo" aria-hidden="true"></i>
+                        More Info
+                      </div>
+                    </div>
+                    <div class="back">
+                      <div class="about_me">About Me</div><br>
+                      <hr width="85%" style="margin-top: -2px;">
+                      <div class="about">
+                      I kill my most of the time coding and programming stuffs.<br/>
+                        <span><b>''</b>There is no place like 127.0.0.1<b>''</b></span><br><br>
+                        <div style="overflow: hidden; text-align: left; font-size: 18px;">
+                            <i class="fa fa-phone" aria-hidden="true"> 9696427244</i><br>
+                            <i class="fa fa-envelope" aria-hidden="true"> iit2016033@iiita.ac.in</i>
+                        </div>
+                      </div>
+                      <hr width="85%">
+                      <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100012688849393">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <!--
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>  
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        -->
+                      </div>
+
+                      <div class="rotate left three">
+                        <i class="fa fa-repeat" aria-hidden="true"></i>
+                        Click To Rotate
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+          </div>
+          </div>
+        </div>
+
+        <div style="height: 100px; background-color: #f2f2f2; margin-top: -10px;"></div>
+        <div class="footer">
+            <div class="footer_social">
+            <a href="https://www.facebook.com/geekhaveniiita/">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            <a href="https://github.com/GeekHaven">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            </div>
+            <div class="copyright">
+                <i class="fa fa-copyright" aria-hidden="true"></i>
+                Copyright 2017
+            </div>
+            <div class="made_by">
+                Design By: Networking Wing, IIITA
+            </div>
+        </div>
+
+      </div>
+      </div>
+      <script src="https://use.fontawesome.com/73608a93c8.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/pager.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/header.js"></script>
+    </body>
+    </html>

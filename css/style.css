@@ -1,0 +1,427 @@
+*{
+	overflow-x: hidden;
+}
+
+
+a{
+    color: #e44c65;
+}
+a:hover, a:focus{
+    color: #272833;
+    text-decoration: none;
+}
+
+.navbar-default .navbar-brand {
+    color: #e44c65;
+}
+
+.navbar-nav > li > a{
+	padding: 0px;
+	margin: 10px 5px;
+	padding: 10px 15px;
+}
+
+.navbar-nav .active>a{
+    background: none !important;
+    color: #e44c65 !important;
+    outline: none;
+}
+
+body{
+	background-color: white;	/*#272833*/
+}
+
+.opaque-navbar {
+    background: rgba(255, 255, 255, 0.5);
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    transition: background .5s ease 0s;
+}
+
+.opaque-navbar.opaque {
+    background:  rgba(255, 255, 255, 1);
+    transition: background .5s ease 0s;
+}
+
+.navbar-default .navbar-nav> li> a {
+	color: #e44c65;
+}
+.navbar-default .navbar-nav> li> a:hover {
+	color: #272833;
+}
+
+a.active{
+	color:red;
+}
+
+.banner{
+	background-size: cover;
+	position: relative;
+	z-index: 5;
+	margin-top: -40px;
+}
+
+.heading{
+	margin-top: 215px;
+	height: 100px !important;
+	overflow: hidden;
+}
+
+#about{
+	height: 100px;
+}
+
+
+
+
+#team{
+	margin-top: 0px;
+}
+#name{
+	margin-left: 10px;
+}
+#roll_no{
+	margin-left: 10px;
+}
+
+.about_me{
+	font-size: 20px; 
+	padding-top: 20px;
+	overflow: hidden;
+}
+
+.front{
+	height: 370px;
+	border: 1.50px solid #d9d9d9;
+	box-shadow: 2px 2px 1px #d9d9d9;
+	width: 85%;
+	font-size: 20px;
+	backface-visibility: hidden;
+  	transform-style: preserve-3d;
+  	transition: all 0.6s;
+  	background-color: white;
+  	overflow: hidden;
+}
+
+.back{
+	margin-top: -370px;
+	border: 1.50px solid #d9d9d9;
+	height: 370px;
+	box-shadow: 2px 2px 2px 1px #d9d9d9;
+	width: 86%;
+	line-height: 20px;
+	font-size: 20px;
+	overflow: hidden;
+	text-align: center;
+	backface-visibility: hidden;
+  	transform-style: preserve3d;
+  	transition: all 0.6s;
+  	background-color: white;
+}
+
+.back {
+  transform: rotateY(-180deg);
+}
+
+.flipped .back {
+  transform: rotateY(0deg);
+}
+
+.flipped .front {
+  transform: rotateY(180deg);
+}
+
+#flip-card-bg{
+	height: 250px; 
+	width: 100%;
+	box-shadow: 0 0px 8px 4px gray;
+}
+
+#flip-card-pic{
+	border: 1px solid #e44c65; 
+	border-radius:50%; 
+	height: 110px; 
+	width: 110px; 
+	margin-left: 7px; 
+	margin-top: -60px;
+}
+
+.info_mem{
+	margin-top: 10px;
+}
+#name{
+	text-align: center;
+	font-size: 20px;
+}
+
+#roll_no{
+	text-align: center;
+	font-size: 20px;
+}
+
+.rotate.right{
+	margin-left: 6.5px;
+	margin-top: 10px;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.rotate.left{
+	margin-left: 6.5px;
+	margin-top: 15px;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+ }
+
+.about{
+	padding-top: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 170px;
+	overflow: hidden;
+}
+
+.social{
+	margin-top: 1.5px;
+	overflow: hidden;
+}
+
+.fa.fa-facebook{
+	color: #3b5998; 
+	font-size: 30px;
+}
+.fa.fa-instagram{
+	color: #fb3958; 
+	font-size: 30px; 
+	padding-left: 17px;
+}
+.fa.fa-twitter{
+	color:#0084b4; 
+	font-size: 30px; 
+	padding-left: 17px;
+}
+.fa.fa-linkedin{
+	color: #0077B5; 
+	font-size: 30px; 
+	padding-left: 17px;
+}
+.fa.fa-github{
+	color: #4CADC0; font-size: 30px; padding-left: 17px;
+}
+
+.flip-card.one, .flip-card.first{
+	margin-left: 0%;
+}
+
+#members, #coordi{
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	margin-bottom: 2px;
+}
+ #team{
+ 	text-align: center;
+	color: white;
+	font-size: 20px;
+	margin-bottom: 2px;
+ }
+
+.members{
+	margin-top: 20px;
+}
+
+#resources, #workshops, #about_net{
+	margin-bottom: 25px;
+}
+
+.second{
+	width: 56%;
+
+	color: black;
+	overflow: hidden;
+}
+
+.card-one{
+	margin-left: 40%;
+}
+.second .sec{
+	margin-left: 10%;
+}
+
+.cont-two{
+	margin-top: 50px;
+}
+
+.websites{
+	width: 70%; background-color: white; margin-left: 35px; height: 265px;
+	border: 1.50px solid #d9d9d9;
+}
+.books{
+	width: 70%; background-color: white; margin-left: 35px; height: 285px;
+}
+.websites a{
+	text-decoration: none;
+}
+
+#team .container .cont-two .col-sm-6{
+	margin-top: 25px;
+}
+
+.fa.fa-arrow-circle-down{
+	 color: black ;margin-top: 175px;
+	  font-size: 30px; text-decoration: none; margin-bottom: 60px; overflow: hidden;
+}
+
+
+div#content {
+    display: none;
+    }
+ 
+div#loading {
+    top: 30%;
+    left: 30%;
+    margin: auto;
+    position: absolute;
+    z-index: 1000;
+    width: 300px;
+    height: 300px;
+    cursor: wait;
+    }
+
+
+/**** Workshops ***/
+.workshop-icons{
+	height: 120px;
+	width: 120px;
+	background-color: #272833;
+	border-radius: 50%;
+	margin-left: 115px;
+	text-align: center;
+}
+.net-info{
+	font-size: 17px;
+	margin-top: -25px;
+	color: #272833;
+}
+
+/** footer **/
+.footer{
+	background-color: #272833;
+	color: white;
+	text-align: center;
+}
+.footer_social{
+	margin-top: 50px;
+}
+.copyright{
+	margin-top: 25px;
+}
+
+
+
+.coordi-img{
+	 height: 250px; width: 250px;border-radius: 50%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  transition: 1s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+ transition: 1s ease;
+  height: 250px;
+  width: 250px;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 11%;
+  transform: translate(0%, 0%);
+  -ms-transform: translate(-58%, -48%);
+}
+
+#coordi:hover .image {
+  opacity: 0.3;
+}
+
+#coordi:hover .middle {
+  opacity: 1;
+}
+
+.coordi-about{
+	color: black;
+}
+
+#coordi{
+	margin-left: 7%;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+
+@media (max-width: 768px){
+	.heading{
+		margin-top: 170px;
+	}
+
+	.banner{
+		background-size: cover;
+	}
+
+	#team .col-sm-6{
+		margin-top: 50px;
+	}
+
+	div#loading{
+		display: none;
+	}
+
+	.second{
+		width:77%;
+		margin-left: 11%;
+	}
+	.about{
+		height: 170px;
+	}
+	.social{
+		margin-top: -2px;
+	}
+	.cont-two{
+		margin-top: 0px;
+	}
+
+	.websites, .books{
+		width:77%; margin-left: 11%;
+		margin-top: 25px;
+	}
+
+	.front, .back{
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.opaque-navbar{
+		background-color: white;
+		opacity: 1;
+	}
+
+	.fa.fa-arrow-circle-down{
+		color: black;
+		margin-top: 120px;
+		margin-bottom: 90px;
+	}
+
+	.work-shop.third , .resource.third{
+		margin-top: 50px;
+	}
+
+
+}
